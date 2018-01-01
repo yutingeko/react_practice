@@ -1,0 +1,70 @@
+@backgroundColor: #efefef;
+@defaultBorderRadius: 5px;
+
+.box-container {
+  margin: 1em auto;
+  height: 92vh;
+  width: 650px;
+  background: @backgroundColor;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  border-radius: @defaultBorderRadius;
+  padding: 10px;
+}
+
+.box-title {
+  font-size: 2em;
+  padding: 0 5px;
+  background: rgba(255, 255, 255, .8);
+  border-radius: @defaultBorderRadius;
+}
+
+.box-info {
+  margin: 20px 10px;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-board {
+  display: flex;
+  flex-flow: wrap;
+  .box-board-content {
+    list-style-type: none;
+    background: #fff;
+    height: 200px;
+    flex: 1 0 200px;
+    justify-content: space-between;
+    border: 3px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+  }
+}
+
+.box-result {
+  position: fixed;
+  top: 40%;
+  left: 30%;
+  width: 450px;
+  height: 30vh;
+  background: rgba(255, 177, 177, 0.95);
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 52px;
+  border-radius: @defaultBorderRadius;
+  h2 {
+    font-weight: normal;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+  }
+  button {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 24px;
+    background-color: #fff;
+    border-radius: @defaultBorderRadius;
+
+  }
+}
